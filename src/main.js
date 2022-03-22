@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
+import '@/plugins/apex-chart'
 
 Vue.config.productionTip = false
 
