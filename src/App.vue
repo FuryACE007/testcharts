@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <HelloWorld></HelloWorld>
+    <Creatinine></Creatinine>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Creatinine from './components/Creatinine-chart.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Creatinine
   }
 }
 </script>
@@ -23,5 +23,7 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  margin-left: 350px;
+  
 }
 </style>
