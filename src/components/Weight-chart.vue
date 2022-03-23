@@ -185,8 +185,8 @@ export default {
         selection: {
           enabled: true,
           xaxis: {
-            min: new Date("19 Jan 2021").getTime(),
-            max: new Date("14 May 2021").getTime(),
+            min: new Date("15 Apr 2021").getTime(),
+            max: new Date("20 Apr 2021").getTime(),
           },
         },
       },
