@@ -210,8 +210,8 @@ export default {
       },
       yaxis: {
         tickAmount: 2,
-        min: 55,
-        max: 90,
+        // min: 55,
+        // max: 90,
       },
       
     },

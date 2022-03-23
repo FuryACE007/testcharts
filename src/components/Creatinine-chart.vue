@@ -121,9 +121,9 @@ export default {
             fontSize: "13px",
           },
         },
-        min: 3,
-        max: 7,
-        forceNiceScale: true,
+        min: 2,
+        max: 5,
+        // forceNiceScale: true,
         // tooltip: {
         //   enabled: true,
         // },
