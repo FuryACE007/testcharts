@@ -3,6 +3,7 @@
     <Creatinine></Creatinine>
     <Weight></Weight>
     <BPstolic></BPstolic>
+    <BPdiastolic></BPdiastolic>
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import Creatinine from './components/Creatinine-chart.vue'
 import Weight from './components/Weight-chart.vue'
 import BPstolic from './components/BPstolic-chart.vue'
+import BPdiastolic from './components/BPdiastolic-chart.vue'
 
 export default {
   name: 'App',
   components: {
     Creatinine,
     Weight,
-    BPstolic
+    BPstolic,
+    BPdiastolic
   }
 }
 </script>
