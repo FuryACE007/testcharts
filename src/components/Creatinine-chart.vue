@@ -71,10 +71,11 @@ export default {
         },
         dropShadow: {
           enabled: true,
-          top: -2,
-          left: 2,
-          blur: 5,
-          opacity: 0.18,
+          color: "#000",
+          top: 18,
+          left: 7,
+          blur: 10,
+          opacity: 0.2,
         },
       },
       dataLabels: {
