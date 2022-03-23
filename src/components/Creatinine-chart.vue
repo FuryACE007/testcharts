@@ -62,11 +62,11 @@ export default {
         },
         animations: {
           enabled: true,
-          easing: "easeinout",
+          easing: "easein",
           speed: 800,
           animateGradually: {
             enabled: true,
-            delay: 150,
+            delay: 100,
           },
         },
         dropShadow: {
@@ -98,11 +98,14 @@ export default {
       title: {
         text: "Creatinine Value",
         align: "center",
+        style: {
+          fontSize: "20px",
+        },
       },
       legend: {
         show: true,
         showForSingleSeries: true,
-        position: "bottom",
+        position: "top",
         horizontalAlign: "center",
         onItemClick: {
           toggleDataSeries: true,
@@ -120,13 +123,17 @@ export default {
         },
         min: 3,
         max: 7,
-        tooltip: {
-          enabled: true,
-        },
+        forceNiceScale: true,
+        // tooltip: {
+        //   enabled: true,
+        // },
       },
       xaxis: {
         title: {
           text: "Date",
+          style: {
+            fontSize: "13px",
+          },
         },
         type: "datetime",
         axisBorder: {
@@ -136,17 +143,55 @@ export default {
           show: false,
         },
       },
-      colors: ["#A2D5AB"],
+      colors: ["#F0A500"],
       fill: {
         type: "solid",
         fillOpacity: 0.7,
       },
-      // grid: {
-      //   padding: {
-      //     left: -5,
-      //     right: 5,
-      //   },
-      // },
+      annotations: {
+        xaxis: [
+          {
+            x: new Date("23 Apr 2021").getTime(),
+            strokeDashArray: 0,
+            borderColor: "#E45826",
+            label: {
+              borderColor: "#E45826",
+              style: {
+                color: "#fff",
+                background: "#E45826",
+                fontSize: "12px",
+                fontWeight: "bold",
+              },
+              text: "EPO 10K",
+            },
+          },
+        ],
+        points: [
+          {
+            x: new Date("19 Apr 2021").getTime(),
+            y: 3,
+            marker: {
+              size: 8,
+              fillColor: "#fff",
+              strokeColor: "#FF7F3F",
+              radius: 2,
+              cssClass: "apexcharts-custom-class",
+            },
+            label: {
+              borderColor: "#FF7F3F",
+              offsetY: 0,
+              style: {
+                color: "#fff",
+                background: "#FF7F3F",
+                fontSize: "12px",
+                fontWeight: "bold",
+              },
+
+              text: "EPO 4K",
+            },
+          },
+        ],
+      },
       tooltip: {
         x: {
           format: "dd MMM yyyy",
