@@ -140,12 +140,7 @@ export default {
           title:{
                 text: "Weight (kg)"
           }
-      },
-      tooltip: {
-        x: {
-          format: "dd MMM yyyy",
-        },
-      },
+      }
     },
     //Area Chart
     seriesLine: [
@@ -213,7 +208,6 @@ export default {
         min: 55,
         max: 90,
       },
-      
     },
   }),
 };
