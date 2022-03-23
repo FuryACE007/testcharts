@@ -1,16 +1,19 @@
 <template>
   <div id="app">
     <Creatinine></Creatinine>
+    <Weight></Weight>
   </div>
 </template>
 
 <script>
 import Creatinine from './components/Creatinine-chart.vue'
+import Weight from './components/Weight-chart.vue'
 
 export default {
   name: 'App',
   components: {
-    Creatinine
+    Creatinine,
+    Weight,
   }
 }
 </script>
