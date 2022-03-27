@@ -5,6 +5,7 @@
     <BPstolic></BPstolic>
     <BPdiastolic></BPdiastolic>
     <HBvsPharma></HBvsPharma>
+    <ConsumablesChart></ConsumablesChart>
   </div>
 </template>
 
@@ -14,6 +15,7 @@ import Weight from './components/Weight-chart.vue'
 import BPstolic from './components/BPstolic-chart.vue'
 import BPdiastolic from './components/BPdiastolic-chart.vue'
 import HBvsPharma from './components/HBvsPharma-chart.vue'
+import ConsumablesChart from './components/Consumables-chart.vue'
 
 export default {
   name: 'App',
@@ -23,6 +25,7 @@ export default {
     BPstolic,
     BPdiastolic,
     HBvsPharma,
+    ConsumablesChart
   }
 }
 </script>
